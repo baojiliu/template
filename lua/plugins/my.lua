@@ -34,7 +34,10 @@ return {
   },
   {
     "vim-autoformat/vim-autoformat",
-    config = function()  end,
+    config = function()
+      vim.g.formatdef_my_custom_sql = '"sql-formatter"'
+      vim.g.formatters_sql = {'my_custom_sql'}
+     end,
   },
   {
     "github/copilot.vim",
